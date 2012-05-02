@@ -151,13 +151,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/tf101/proprietary/usr/share/alsa/pcm/surround50.conf:system/usr/share/alsa/pcm/surround50.conf \
     vendor/asus/tf101/proprietary/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
     vendor/asus/tf101/proprietary/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf \
-    vendor/asus/tf101/proprietary/etc/bluetooth/audio.conf:system/etc/bluetooth/audio.conf \
-    vendor/asus/tf101/proprietary/etc/bluetooth/auto_pairing.conf:system/etc/bluetooth/auto_pairing.conf \
-    vendor/asus/tf101/proprietary/etc/bluetooth/bdaddr:system/etc/bluetooth/bdaddr \
-    vendor/asus/tf101/proprietary/etc/bluetooth/blacklist.conf:system/etc/bluetooth/blacklist.conf \
-    vendor/asus/tf101/proprietary/etc/bluetooth/input.conf:system/etc/bluetooth/input.conf \
-    vendor/asus/tf101/proprietary/etc/bluetooth/main.conf:system/etc/bluetooth/main.conf \
-    vendor/asus/tf101/proprietary/etc/bluetooth/network.conf:system/etc/bluetooth/network.conf \
     vendor/asus/tf101/proprietary/etc/nvram.txt:system/etc/nvram.txt \
     vendor/asus/tf101/proprietary/etc/nvram_murata.txt:system/etc/nvram_murata.txt \
     vendor/asus/tf101/proprietary/etc/nvram_nh615.txt:system/etc/nvram_nh615.txt \
