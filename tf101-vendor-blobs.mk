@@ -22,17 +22,14 @@
 #    vendor/asus/tf101/proprietary/lib/libseccameraadaptor.so:obj/lib/libseccameraadaptor.so
 
 PRODUCT_COPY_FILES += \
-    vendor/asus/tf101/proprietary/app/Keyboard.apk:system/app/Keyboard.apk \
-    vendor/asus/tf101/proprietary/app/XT9IME.apk:system/app/XT9IME.apk \
     vendor/asus/tf101/proprietary/bin/sensors-config:system/bin/sensors-config \
     vendor/asus/tf101/proprietary/bin/glgps:system/bin/glgps \
-    vendor/asus/tf101/proprietary/bin/pppd_btdun:system/bin/pppd_btdun \
-    vendor/asus/tf101/proprietary/bin/wifimacwriter:system/bin/wifimacwriter \
-    vendor/asus/tf101/proprietary/data/srs_processing.cfg:system/data/srs_processing.cfg \
     vendor/asus/tf101/proprietary/etc/asound.conf:system/etc/asound.conf \
-    vendor/asus/tf101/proprietary/etc/BtService.sh:system/etc/BtService.sh \
-    vendor/asus/tf101/proprietary/etc/bluetooth/bdaddr:system/etc/bluetooth/bdaddr \
-    vendor/asus/tf101/proprietary/etc/bluetooth/main.conf:system/etc/bluetooth/main.conf \
+    vendor/asus/tf101/proprietary//etc/media_profiles.xml:system//etc/media_profiles.xml \
+    vendor/asus/tf101/proprietary//etc/vold.fstab:system//etc/vold.fstab \
+    vendor/asus/tf101/proprietary//etc/gps.conf:system//etc/gps.conf \
+    vendor/asus/tf101/proprietary//etc/gps/gpsconfig.xml:system//etc/gps/gpsconfig.xml \
+    vendor/asus/tf101/proprietary//data/srs_processing.cfg:system//data/srs_processing.cfg \
     vendor/asus/tf101/proprietary/etc/firmware/nvmm_aacdec.axf:system/etc/firmware/nvmm_aacdec.axf \
     vendor/asus/tf101/proprietary/etc/firmware/nvmm_adtsdec.axf:system/etc/firmware/nvmm_adtsdec.axf \
     vendor/asus/tf101/proprietary/etc/firmware/nvmm_h264dec.axf:system/etc/firmware/nvmm_h264dec.axf \
@@ -50,6 +47,7 @@ PRODUCT_COPY_FILES += \
     vendor/asus/tf101/proprietary/etc/firmware/nvmm_wmaprodec.axf:system/etc/firmware/nvmm_wmaprodec.axf \
     vendor/asus/tf101/proprietary/etc/firmware/nvrm_avp.bin:system/etc/firmware/nvrm_avp.bin \
     vendor/asus/tf101/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+    vendor/asus/tf101/proprietary/lib/egl/libEGL_perfhud.so:system/lib/egl/libEGL_perfhud.so \
     vendor/asus/tf101/proprietary/lib/egl/libEGL_tegra.so:system/lib/egl/libEGL_tegra.so \
     vendor/asus/tf101/proprietary/lib/egl/libGLESv1_CM_tegra.so:system/lib/egl/libGLESv1_CM_tegra.so \
     vendor/asus/tf101/proprietary/lib/egl/libGLESv2_tegra.so:system/lib/egl/libGLESv2_tegra.so \
@@ -124,12 +122,18 @@ PRODUCT_COPY_FILES += \
     vendor/asus/tf101/proprietary/lib/libnvtvmr.so:system/lib/libnvtvmr.so \
     vendor/asus/tf101/proprietary/lib/libnvwinsys.so:system/lib/libnvwinsys.so \
     vendor/asus/tf101/proprietary/lib/libnvwsi.so:system/lib/libnvwsi.so \
-    vendor/asus/tf101/proprietary/lib/libshapewriter.so:system/lib/libshapewriter.so \
     vendor/asus/tf101/proprietary/lib/libstagefrighthw.so:system/lib/libstagefrighthw.so \
+    vendor/asus/tf101/proprietary/lib/libshapewriter.so:system/lib/libshapewriter.so \
     vendor/asus/tf101/proprietary/lib/libsensors.al3000a.so:system/lib/libsensors.al3000a.so \
     vendor/asus/tf101/proprietary/lib/libsensors.isl29018.so:system/lib/libsensors.isl29018.so \
     vendor/asus/tf101/proprietary/lib/libsensors.base.so:system/lib/libsensors.base.so \
     vendor/asus/tf101/proprietary/lib/libsensors.mpl.so:system/lib/libsensors.mpl.so \
+    vendor/asus/tf101/proprietary/usr/idc/atmel-maxtouch.idc:system/usr/idc/atmel-maxtouch.idc \
+    vendor/asus/tf101/proprietary/usr/idc/elantech_touchscreen.idc:system/usr/idc/elantech_touchscreen.idc \
+    vendor/asus/tf101/proprietary/usr/idc/panjit_touch.idc:system/usr/idc/panjit_touch.idc \
+    vendor/asus/tf101/proprietary/usr/keychars/asusec.kcm:system/usr/keychars/asusec.kcm \
+    vendor/asus/tf101/proprietary/usr/keylayout/asusec.kl:system/usr/keylayout/asusec.kl \
+    vendor/asus/tf101/proprietary/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     vendor/asus/tf101/proprietary/usr/share/alsa/alsa.conf:system/usr/share/alsa/alsa.conf \
     vendor/asus/tf101/proprietary/usr/share/alsa/cards/aliases.conf:system/usr/share/alsa/cards/aliases.conf \
     vendor/asus/tf101/proprietary/usr/share/alsa/pcm/center_lfe.conf:system/usr/share/alsa/pcm/center_lfe.conf \
@@ -147,54 +151,38 @@ PRODUCT_COPY_FILES += \
     vendor/asus/tf101/proprietary/usr/share/alsa/pcm/surround50.conf:system/usr/share/alsa/pcm/surround50.conf \
     vendor/asus/tf101/proprietary/usr/share/alsa/pcm/surround51.conf:system/usr/share/alsa/pcm/surround51.conf \
     vendor/asus/tf101/proprietary/usr/share/alsa/pcm/surround71.conf:system/usr/share/alsa/pcm/surround71.conf \
-    vendor/asus/tf101/proprietary/usr/keychars/asusec.kcm:system/usr/keychars/asusec.kcm \
+    vendor/asus/tf101/proprietary/etc/bluetooth/audio.conf:system/etc/bluetooth/audio.conf \
+    vendor/asus/tf101/proprietary/etc/bluetooth/auto_pairing.conf:system/etc/bluetooth/auto_pairing.conf \
+    vendor/asus/tf101/proprietary/etc/bluetooth/bdaddr:system/etc/bluetooth/bdaddr \
+    vendor/asus/tf101/proprietary/etc/bluetooth/blacklist.conf:system/etc/bluetooth/blacklist.conf \
+    vendor/asus/tf101/proprietary/etc/bluetooth/input.conf:system/etc/bluetooth/input.conf \
+    vendor/asus/tf101/proprietary/etc/bluetooth/main.conf:system/etc/bluetooth/main.conf \
+    vendor/asus/tf101/proprietary/etc/bluetooth/network.conf:system/etc/bluetooth/network.conf \
+    vendor/asus/tf101/proprietary/etc/nvram.txt:system/etc/nvram.txt \
+    vendor/asus/tf101/proprietary/etc/nvram_murata.txt:system/etc/nvram_murata.txt \
+    vendor/asus/tf101/proprietary/etc/nvram_nh615.txt:system/etc/nvram_nh615.txt \
+    vendor/asus/tf101/proprietary/etc/nvram_nh615_sl101.txt:system/etc/nvram_nh615_sl101.txt \
+    vendor/asus/tf101/proprietary/etc/firmware/bcm4329.hcd:system/etc/firmware/bcm4329.hcd \
+    vendor/asus/tf101/proprietary/etc/firmware/BCM4329B1_002.002.023.0797.0863.hcd:system/etc/firmware/BCM4329B1_002.002.023.0797.0863.hcd \
+    vendor/asus/tf101/proprietary/etc/firmware/BCM4329B1_002.002.023.0797.0879.hcd:system/etc/firmware/BCM4329B1_002.002.023.0797.0879.hcd \
+    vendor/asus/tf101/proprietary/etc/firmware/BCM4329B1_002.002.023.0797.0942.hcd:system/etc/firmware/BCM4329B1_002.002.023.0797.0942.hcd \
+    vendor/asus/tf101/proprietary/etc/BtService.sh:system/etc/BtService.sh \
+    vendor/asus/tf101/proprietary/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf \
+    vendor/asus/tf101/proprietary/vendor/firmware/fw_bcm4329.bin:system/vendor/firmware/fw_bcm4329.bin \
+    vendor/asus/tf101/proprietary/vendor/firmware/fw_bcm4329_apsta.bin:system/vendor/firmware/fw_bcm4329_apsta.bin \
+    vendor/asus/tf101/proprietary/vendor/firmware/bcm4329/fw_bcmdhd.bin:system/vendor/firmware/bcm4329/fw_bcmdhd.bin \
+    vendor/asus/tf101/proprietary/vendor/firmware/bcm4329/fw_bcmdhd_apsta.bin:system/vendor/firmware/bcm4329/fw_bcmdhd_apsta.bin \
+    vendor/asus/tf101/proprietary/vendor/firmware/bcm4329/fw_bcmdhd_p2p.bin:system/vendor/firmware/bcm4329/fw_bcmdhd_p2p.bin \
+    vendor/asus/tf101/proprietary/bin/brcm_patchram_plus:system/bin/brcm_patchram_plus \
+    vendor/asus/tf101/proprietary/bin/pppd_btdun:system/bin/pppd_btdun \
+    vendor/asus/tf101/proprietary/bin/wifimacwriter:system/bin/wifimacwriter \
+    vendor/asus/tf101/proprietary/etc/permissions/com.asus.hardware.00.xml:system/etc/permissions/com.asus.hardware.00.xml \
+    vendor/asus/tf101/proprietary/etc/permissions/com.asus.hardware.01.xml:system/etc/permissions/com.asus.hardware.01.xml \
+    vendor/asus/tf101/proprietary/etc/permissions/com.asus.hardware.08.xml:system/etc/permissions/com.asus.hardware.08.xml \
+    vendor/asus/tf101/proprietary/etc/permissions/com.asus.hardware.10.xml:system/etc/permissions/com.asus.hardware.10.xml \
+    vendor/asus/tf101/proprietary/app/Keyboard.apk:system/app/Keyboard.apk \
+    vendor/asus/tf101/proprietary/app/XT9IME.apk:system/app/XT9IME.apk \
+    vendor/asus/tf101/proprietary/usr/xt9:system/usr/xt9 \
+    vendor/asus/tf101/proprietary/usr/keychars:system/usr/keychars \
     vendor/asus/tf101/proprietary/usr/keylayout/asusec.kl:system/usr/keylayout/asusec.kl \
-    vendor/asus/tf101/proprietary/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    vendor/asus/tf101/proprietary/usr/xt9/config/databases.conf:system/usr/xt9/config/databases.conf \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/ZHhpd_pinyin_bpmf_stroke_cangjie.kdb:system/usr/xt9/databases/kdb/ZHhpd_pinyin_bpmf_stroke_cangjie.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/azerty.french.center.kdb:system/usr/xt9/databases/kdb/azerty.french.center.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/kohqd.kdb:system/usr/xt9/databases/kdb/kohqd.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/qwerty.arabic.center.kdb:system/usr/xt9/databases/kdb/qwerty.arabic.center.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/qwerty.danish.center.kdb:system/usr/xt9/databases/kdb/qwerty.danish.center.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/qwerty.english.center.kdb:system/usr/xt9/databases/kdb/qwerty.english.center.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/qwerty.farsi.center.kdb:system/usr/xt9/databases/kdb/qwerty.farsi.center.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/qwerty.finish.center.kdb:system/usr/xt9/databases/kdb/qwerty.finish.center.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/qwerty.greek.center.kdb:system/usr/xt9/databases/kdb/qwerty.greek.center.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/qwerty.hebrew.center.kdb:system/usr/xt9/databases/kdb/qwerty.hebrew.center.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/qwerty.norwegian.center.kdb:system/usr/xt9/databases/kdb/qwerty.norwegian.center.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/qwerty.russian.center.kdb:system/usr/xt9/databases/kdb/qwerty.russian.center.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/qwerty.swedish.center.kdb:system/usr/xt9/databases/kdb/qwerty.swedish.center.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/qwerty.thai.center.kdb:system/usr/xt9/databases/kdb/qwerty.thai.center.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/qwertz.german.center.kdb:system/usr/xt9/databases/kdb/qwertz.german.center.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/kdb/reduced_azerty.french.center.kdb:system/usr/xt9/databases/kdb/reduced_azerty.french.center.kdb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/ARlsUN_xt9.ldb:system/usr/xt9/databases/ldb/ARlsUN_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/CSlsUN_xt9.ldb:system/usr/xt9/databases/ldb/CSlsUN_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/DAusUN_xt9.ldb:system/usr/xt9/databases/ldb/DAusUN_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/DEusUN_xt9_2.ldb:system/usr/xt9/databases/ldb/DEusUN_xt9_2.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/ELlsUN_xt9.ldb:system/usr/xt9/databases/ldb/ELlsUN_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/ENubUN_xt9_2.ldb:system/usr/xt9/databases/ldb/ENubUN_xt9_2.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/ESusUN_xt9_2.ldb:system/usr/xt9/databases/ldb/ESusUN_xt9_2.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/FAlsUN_xt9.ldb:system/usr/xt9/databases/ldb/FAlsUN_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/FIusUN_xt9_2.ldb:system/usr/xt9/databases/ldb/FIusUN_xt9_2.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/FRusUN_xt9_2.ldb:system/usr/xt9/databases/ldb/FRusUN_xt9_2.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/HElsUN_xt9.ldb:system/usr/xt9/databases/ldb/HElsUN_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/HUlsUN_xt9.ldb:system/usr/xt9/databases/ldb/HUlsUN_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/ITusUN_xt9_2.ldb:system/usr/xt9/databases/ldb/ITusUN_xt9_2.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/NLlsUN_xt9_2.ldb:system/usr/xt9/databases/ldb/NLlsUN_xt9_2.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/NOlsUN_xt9.ldb:system/usr/xt9/databases/ldb/NOlsUN_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/PLlsUN_xt9.ldb:system/usr/xt9/databases/ldb/PLlsUN_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/PTusUN_xt9.ldb:system/usr/xt9/databases/ldb/PTusUN_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/RUlsUN_xt9_2.ldb:system/usr/xt9/databases/ldb/RUlsUN_xt9_2.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/SKlsUN_xt9.ldb:system/usr/xt9/databases/ldb/SKlsUN_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/SVusUN_xt9.ldb:system/usr/xt9/databases/ldb/SVusUN_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/THlsUN_xt9.ldb:system/usr/xt9/databases/ldb/THlsUN_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/TRlsUN_xt9.ldb:system/usr/xt9/databases/ldb/TRlsUN_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/ZHsbUNps_GB2312_xt9.ldb:system/usr/xt9/databases/ldb/ZHsbUNps_GB2312_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/ldb/ZHtbUNps_Big5_bpmf_pinyin_CJ_xt9.ldb:system/usr/xt9/databases/ldb/ZHtbUNps_Big5_bpmf_pinyin_CJ_xt9.ldb \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/mdb/DE.txt:system/usr/xt9/databases/mdb/DE.txt \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/mdb/EN.txt:system/usr/xt9/databases/mdb/EN.txt \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/mdb/ES.txt:system/usr/xt9/databases/mdb/ES.txt \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/mdb/FR.txt:system/usr/xt9/databases/mdb/FR.txt \
-    vendor/asus/tf101/proprietary/usr/xt9/databases/mdb/IT.txt:system/usr/xt9/databases/mdb/IT.txt \
-    vendor/asus/tf101/proprietary/usr/xt9/keychars:system/usr/xt9/keychars \
-    vendor/asus/tf101/proprietary/usr/xt9/keylayout:system/usr/xt9/keylayout \
+    vendor/asus/tf101/proprietary/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
