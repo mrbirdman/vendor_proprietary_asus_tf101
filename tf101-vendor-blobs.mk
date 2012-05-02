@@ -183,6 +183,6 @@ PRODUCT_COPY_FILES += \
     vendor/asus/tf101/proprietary/app/Keyboard.apk:system/app/Keyboard.apk \
     vendor/asus/tf101/proprietary/app/XT9IME.apk:system/app/XT9IME.apk \
     vendor/asus/tf101/proprietary/usr/xt9:system/usr/xt9 \
-    vendor/asus/tf101/proprietary/usr/keychars:system/usr/keychars \
+    vendor/asus/tf101/proprietary/usr/keychars/asusec.kcm:system/usr/keychars/asusec.kcm \
     vendor/asus/tf101/proprietary/usr/keylayout/asusec.kl:system/usr/keylayout/asusec.kl \
     vendor/asus/tf101/proprietary/usr/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl
